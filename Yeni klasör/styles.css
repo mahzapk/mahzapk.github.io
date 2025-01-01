@@ -1,0 +1,260 @@
+/* Google Font Ekleme */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('b.jpg'); /* Arka plan resminizin yolunu buraya ekleyin */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo Konteyneri */
+.logo-container {
+    position: absolute;
+    top: 20px; /* Üstten 20px mesafe */
+    right: 20px; /* Sağdan 20px mesafe */
+}
+
+/* Logo */
+.logo {
+    width: 100px; /* Logo boyutu */
+    height: auto;
+}
+
+/* Başlık Stili */
+h1.fancy-title {
+    color: #ee5a20; /* Beyaz yazı rengi */
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px; /* Daha büyük yazı boyutu */
+    margin: 20px 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Başlık için gölge efekti */
+}
+
+/* Konteyner Yapısı */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Aralık düzenlemesi */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Küçük ekranlar için satır atlama */
+    justify-content: space-between; /* Butonlar arasında boşluk bırakır */
+}
+
+/* Sütunlar */
+.column {
+    flex: 1;
+    max-width: 300px; /* Kolon genişliğini sınırla */
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #c5540f;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.37); /* Saydam beyaz arka plan */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+/* Buton Stili */
+button {
+    width: 150px;
+    height: 150px;
+    font-size: 16px; /* Optimize the text size */
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Buton metni için beyaz renk */
+    background-color: #ff9800; /* Varsayılan arka plan rengi */
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.6);
+    border: none;
+    border-radius: 10px; /* Yuvarlatılmış köşeler */
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    background-size: cover; /* Resmi butona tam sığdırır */
+    background-position: center; /* Resmin ortalanmasını sağlar */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Buton yazılarına gölge ekleyin */
+    position: relative;
+    overflow: hidden; /* Butonun dışına taşan yazıları gizle */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Metni ortalamak için flex kullan */
+    padding: 20px; /* Yeterli iç boşluk ekleyin */
+}
+
+/* Buton Metni (Yazı Arka Planı Ekleme) */
+button span {
+    position: relative;
+    z-index: 2; /* Yazının üzerine gelecek */
+    background-color: rgba(255, 152, 0, 0.8); /* Turuncu renk arka plan */
+    padding: 5px 10px;
+    border-radius: 5px; /* Yuvarlatılmış köşeler */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Gölgeleme */
+    text-align: center;
+    font-size: 14px; /* Düşük boyutlu yazı */
+}
+
+
+/* Buton Hover Etkisi */
+button:hover {
+    background-color: #e68900; /* Daha koyu turuncu */
+    transform: scale(1.05); /* Hafif büyüme efekti */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Hoverda gölge efekti */
+}
+
+/* İlk sütundaki butonlar için görseller */
+.column:nth-of-type(1) button:nth-of-type(1) {
+    background-image: url('5.jpeg'); /* Ara Sıcaklar */
+}
+
+.column:nth-of-type(1) button:nth-of-type(2) {
+    background-image: url('4.jpg'); /* Çorbalar */
+}
+
+.column:nth-of-type(1) button:nth-of-type(3) {
+    background-image: url('1.jpg'); /* Ana Yemekler */
+}
+
+/* İkinci sütundaki butonlar için görseller */
+.column:nth-of-type(2) button:nth-of-type(1) {
+    background-image: url('6.jpg'); /* Salatalar */
+}
+
+.column:nth-of-type(2) button:nth-of-type(2) {
+    background-image: url('2.jpg'); /* İçecekler */
+}
+
+.column:nth-of-type(2) button:nth-of-type(3) {
+    background-image: url('3.png'); /* Tatlılar */
+}
+
+/* Menü Konteyneri */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Menü Öğesi */
+.menu-item {
+    width: 250px;
+    padding: 20px;
+    background-color: #ee5a20;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ürün Resmi */
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Ürün Başlığı */
+.menu-item h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold; /* Başlıkları kalın yaparak daha belirgin hale getirin */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Başlığa gölge ekleyin */
+}
+
+/* Ürün Fiyatı */
+.menu-item .price {
+    font-size: 18px;
+    color: #ff9800; /* Turuncu rengi */
+    font-weight: bold;
+}
+
+/* Liste Stili */
+ul.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%; /* Liste genişliği */
+    max-width: 400px; /* Maksimum genişlik */
+    text-align: left;
+    background-color: #fff; /* Beyaz arka plan */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    overflow: hidden; /* Köşeler düzgün görünsün */
+}
+
+ul.product-list li {
+    font-size: 18px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul.product-list li:last-child {
+    border-bottom: none; /* Son öğede sınır yok */
+}
+
+/* Geri Dön Butonu */
+button.back-button {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #7e80b3; /* Gri-Mavi ton */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button.back-button:hover {
+    background-color: #455a64; /* Daha koyu gri-mavi */
+}
+
+/* Mobil için responsive düzenlemeler */
+@media (max-width: 768px) {
+    /* Logo boyutunu küçült */
+    .logo {
+        width: 80px;
+    }
+
+    /* Başlık font büyüklüğünü küçült */
+    h1.fancy-title {
+        font-size: 32px;
+    }
+
+    /* Butonlar daha küçük hale gelsin */
+    button {
+        width: 120px;
+        height: 120px;
+        font-size: 16px;
+    }
+
+    /* Sütunlar daha dar hale gelsin */
+    .column {
+        max-width: 250px;
+    }
+
+    /* Konteyner genişliğini artır */
+    .container {
+        gap: 15px;
+    }
+
+    /* Menü öğeleri daha küçük olsun */
+    .menu-item {
+        width: 200px;
+    }
+}

@@ -4,7 +4,7 @@
 /* Genel Stil */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('b.jpg'); /* Arka plan resminizin yolunu buraya ekleyin */
+    background-image: url('images/b.jpg'); /* Arka plan resminizin yolunu buraya ekleyin */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -17,14 +17,16 @@ body {
 .logo-container {
     position: absolute;
     top: 20px; /* Üstten 20px mesafe */
-    right: 20px; /* Sağdan 20px mesafe */
+    right: 20px; /* Sağdan 20px mesafe */   
 }
 
-/* Logo */
+/* Logo arka planını saydam yap */
 .logo {
     width: 100px; /* Logo boyutu */
     height: auto;
+    background-color: transparent; /* Arka planı saydam yap */
 }
+
 
 /* Başlık Stili */
 h1.fancy-title {
@@ -107,28 +109,28 @@ button:hover {
 
 /* İlk sütundaki butonlar için görseller */
 .column:nth-of-type(1) button:nth-of-type(1) {
-    background-image: url('5.jpeg'); /* Ara Sıcaklar */
+    background-image: url('images/5.jpeg'); /* Ara Sıcaklar */
 }
 
 .column:nth-of-type(1) button:nth-of-type(2) {
-    background-image: url('4.jpg'); /* Çorbalar */
+    background-image: url('images/4.jpg'); /* Çorbalar */
 }
 
 .column:nth-of-type(1) button:nth-of-type(3) {
-    background-image: url('1.jpg'); /* Ana Yemekler */
+    background-image: url('images/1.jpg'); /* Ana Yemekler */
 }
 
 /* İkinci sütundaki butonlar için görseller */
 .column:nth-of-type(2) button:nth-of-type(1) {
-    background-image: url('6.jpg'); /* Salatalar */
+    background-image: url('images/6.jpg'); /* Salatalar */
 }
 
 .column:nth-of-type(2) button:nth-of-type(2) {
-    background-image: url('2.jpg'); /* İçecekler */
+    background-image: url('images/2.jpg'); /* İçecekler */
 }
 
 .column:nth-of-type(2) button:nth-of-type(3) {
-    background-image: url('3.png'); /* Tatlılar */
+    background-image: url('images/3.png'); /* Tatlılar */
 }
 
 /* Menü Konteyneri */
